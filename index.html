@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StartupX - Soluciones Profesionales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in { opacity: 0; transform: translateY(25px); transition: all 0.8s ease; }
+    .fade-in.show { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-white font-sans">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+    <h1 class="font-bold text-xl text-purple-600">StartupX</h1>
+    <div class="hidden md:flex space-x-6">
+      <a href="#inicio">Inicio</a>
+      <a href="#features">Servicios</a>
+      <a href="#pricing">Planes</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="inicio" class="min-h-screen bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex flex-col justify-center items-center text-center p-8">
+  <h1 class="text-5xl font-bold mb-4 fade-in">Soluciones Profesionales</h1>
+  <p class="text-lg mb-6 max-w-xl fade-in">Más de 200 empresas automatizan sus procesos con nuestra plataforma SaaS.</p>
+  <button onclick="scrollToContact()" class="bg-white text-purple-600 px-6 py-3 rounded-xl font-semibold hover:scale-105 transition fade-in">Solicitar Demo</button>
+</section>
+
+<!-- STATS -->
+<section class="py-16 text-center">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+    <div class="fade-in">
+      <h3 class="text-4xl font-bold text-purple-600">+200</h3>
+      <p>Clientes activos</p>
+    </div>
+    <div class="fade-in">
+      <h3 class="text-4xl font-bold text-purple-600">99.9%</h3>
+      <p>Uptime</p>
+    </div>
+    <div class="fade-in">
+      <h3 class="text-4xl font-bold text-purple-600">24/7</h3>
+      <p>Soporte</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition fade-in">
+      <h3 class="font-bold text-xl mb-2">Automatización</h3>
+      <p>Optimiza tareas repetitivas y ahorra tiempo.</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition fade-in">
+      <h3 class="font-bold text-xl mb-2">Analítica</h3>
+      <p>Datos en tiempo real para tomar mejores decisiones.</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition fade-in">
+      <h3 class="font-bold text-xl mb-2">Integraciones</h3>
+      <p>Conecta con tus herramientas favoritas fácilmente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE ELEGIRNOS -->
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 px-6">
+    <div class="fade-in">
+      <h2 class="text-3xl font-bold mb-4">¿Por qué elegirnos?</h2>
+      <p>Equipo experto, tecnología moderna y resultados comprobados en múltiples industrias.</p>
+    </div>
+    <div class="space-y-4">
+      <div class="p-4 border rounded-xl fade-in">✔ +5 años de experiencia</div>
+      <div class="p-4 border rounded-xl fade-in">✔ Atención personalizada</div>
+      <div class="p-4 border rounded-xl fade-in">✔ Implementación en menos de 7 días</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="py-16 text-center bg-gray-50">
+  <h2 class="text-3xl font-bold mb-10 fade-in">Planes</h2>
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+    <div class="bg-white p-6 rounded-xl shadow fade-in">
+      <h3 class="font-bold text-xl mb-2">Básico</h3>
+      <p class="text-2xl font-bold mb-4">$10/mes</p>
+      <p>Ideal para pequeños negocios</p>
+    </div>
+    <div class="bg-purple-600 text-white p-6 rounded-xl shadow-lg scale-105 fade-in">
+      <h3 class="font-bold text-xl mb-2">Pro</h3>
+      <p class="text-2xl font-bold mb-4">$25/mes</p>
+      <p>Para empresas en crecimiento</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow fade-in">
+      <h3 class="font-bold text-xl mb-2">Enterprise</h3>
+      <p class="text-2xl font-bold mb-4">$60/mes</p>
+      <p>Soluciones avanzadas</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="py-16 text-center">
+  <h2 class="text-3xl font-bold mb-10 fade-in">Clientes felices</h2>
+  <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+    <div class="p-6 border rounded-xl fade-in">"Automatizamos todo nuestro negocio." - Carlos M.</div>
+    <div class="p-6 border rounded-xl fade-in">"Increíble plataforma, fácil de usar." - Ana R.</div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="py-16 text-center bg-purple-600 text-white">
+  <h2 class="text-3xl font-bold mb-6 fade-in">Solicita una demo</h2>
+  <form class="max-w-md mx-auto space-y-4 fade-in" onsubmit="handleSubmit(event)">
+    <input type="email" placeholder="Correo" class="w-full p-3 rounded text-black" required>
+    <button class="bg-white text-purple-600 px-6 py-3 rounded-xl w-full">Enviar</button>
+  </form>
+  <p id="successMsg" class="mt-4 hidden">✔ Solicitud enviada</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 bg-gray-900 text-white">
+  © 2026 StartupX | contacto@startupx.com
+</footer>
+
+<script>
+function scrollToContact() {
+  document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
+}
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+function handleSubmit(e) {
+  e.preventDefault();
+  document.getElementById('successMsg').classList.remove('hidden');
+  e.target.reset();
+}
+</script>
+
+</body>
+</html>
